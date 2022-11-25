@@ -5,11 +5,13 @@
 import React from "react";
 import "./Card.css";
 
+
+
 function Card(props) {
   return (
     <div
       className="card"
-      style={{ backgroundImage: `url(/src/assets/${props.background}.jpg)` }}
+    style={{ backgroundImage: `url(${props.background})` }}
       onClick={() => props.selected(false)}
     >
       <div className="icon-wrap">

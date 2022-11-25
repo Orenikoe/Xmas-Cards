@@ -4,9 +4,15 @@
 import React from "react";
 import Card from "../Card/Card";
 import "./CardsLibrary.css";
+import image1 from "../../assets/1.jpg";
+import image2 from "../../assets/2.jpg";
+import image3 from "../../assets/3.jpg";
+import image4 from "../../assets/4.jpg";
+import image5 from "../../assets/5.jpg";
+import image6 from "../../assets/6.jpg";
 
 function CardsLibrary({ choose, choosedBackground, selected }) {
-  const backgroundsArr = [1, 2, 3, 4, 5, 6];
+  const backgroundsArr = [image1, image2, image3, image4, image5, image6];
 
   return (
     <div className="cards-library">
@@ -21,7 +27,12 @@ function CardsLibrary({ choose, choosedBackground, selected }) {
             onClick={() => choose(background)}
           >
             {" "}
-            <Card key={index} id={index + 1} background={background} selected={selected} />
+            <Card
+              key={index}
+              id={index + 1}
+              background={background}
+              selected={selected}
+            />
           </div>
         );
       })}
