@@ -21,7 +21,7 @@ function CardsLibrary({ choose, choosedBackground, selected }) {
             onClick={() => choose(background)}
           >
             {" "}
-            <Card id={index + 1} background={background} selected={selected} />
+            <Card key={index} id={index + 1} background={background} selected={selected} />
           </div>
         );
       })}
