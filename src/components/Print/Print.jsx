@@ -36,7 +36,7 @@ function Print({ obj }) {
           exportComponentAsJPEG(componentRef);
         }}
       >
-        Export as JPEG
+        Download Photo
         <img className="christmas-hat" src={Hat} alt="christmas-hat" />
       </button>
       {/* <button
@@ -46,7 +46,7 @@ function Print({ obj }) {
         Export as PDF
         <img className="christmas-hat" src={Hat} alt="christmas-hat" />
       </button> */}
-      <button
+      {/* <button
         className="export-button"
         onClick={() => {
           exportComponentAsPNG(componentRef);
@@ -54,7 +54,7 @@ function Print({ obj }) {
       >
         Export as PNG
         <img className="christmas-hat" src={Hat} alt="christmas-hat" />
-      </button>
+      </button> */}
     </>
   );
 }
