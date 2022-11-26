@@ -38,8 +38,8 @@
 
 @media screen and (max-width: 700px) {
   .final-result {
-    width: 100%;
-    left: 0;
+    width: 75%;
+    left: 50px;
   }
 
   .cards-arsenal-wrap {
