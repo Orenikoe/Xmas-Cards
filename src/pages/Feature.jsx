@@ -20,7 +20,6 @@ export default function Feature() {
   const [textValue, setTextValue] = useState(null);
   const [photoValue, setphotoValue] = useState(null);
   const [chooseBackground, setChooeseBackground] = useState(null);
-  const [removeFinal, setRemoveFinal] = useState(false);
   const [isCompleted, setIsCompleted] = useState(null);
 
   const removeResults = () => {
@@ -29,8 +28,7 @@ export default function Feature() {
         "Your Card will be lost, Press the button on the bottom to save it as photo"
       );
       if (response === true) {
-        setRemoveFinal(true);
-        location.reload();
+        setIsCompleted(false)
       }
     }
   };
@@ -59,7 +57,7 @@ export default function Feature() {
           reset={setIsCompleted}
         />
       </div>
-      {!removeFinal && isCompleted && textValue !== null && (
+      {isCompleted && (
         <div className="final-result">
           <h2 className="card-ready">Your card is ready🎄</h2>
           <Print
