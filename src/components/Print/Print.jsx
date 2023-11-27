@@ -20,7 +20,7 @@ const ComponentToPrint = React.forwardRef((props, ref) => (
     <div>
       <img className="final-img" src={props.obj.photo} alt="charactar" />
     </div>
-    <div className="card-text">{props.obj.text}</div>
+    {props.obj.text && <div className="card-text">{props.obj.text}</div>}
   </div>
 ));
 

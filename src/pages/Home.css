@@ -44,6 +44,17 @@
   letter-spacing: 5px;
   padding: 0 5px;
 }
+.titulo > h6 {
+  color: var(--White);
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transform: translateY(-120px);
+  letter-spacing: 5px;
+  padding: 0 5px;
+}
 
 .container-background {
   z-index: 0;

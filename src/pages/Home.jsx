@@ -53,6 +53,7 @@ function Home() {
         </div>
         <div className="titulo">
           <p>Christmas Countdown Timer</p>
+          <h6>Made with Love to Pauli Popsi Seuling ♥</h6>
         </div>
         <div className="timer">
           <div className="box">

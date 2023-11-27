@@ -60,6 +60,7 @@ export default function Feature() {
       {isCompleted && (
         <div className="final-result">
           <h2 className="card-ready">Your card is ready🎄</h2>
+          <p className="retake">To retake the photo click anywhere outside the card</p>
           <Print
             obj={{
               background: chooseBackground,

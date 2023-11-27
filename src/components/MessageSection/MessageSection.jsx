@@ -6,7 +6,7 @@ function MessageSection({ text, reset, textValue }) {
   return (
     <div className="section-wrap">
       {textValue === null && (
-        <h3 className="instructions">Fill the Message First!!</h3>
+        <h3 className="instructions">Add some lovely words to the card ↓</h3>
       )}
       <textarea
         className="text-area"

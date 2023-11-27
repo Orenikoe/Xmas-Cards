@@ -60,13 +60,13 @@ export default function Camera({ whenClick, photo, text, textValue, reset }) {
           >
             <BsCameraFill className="camera-icon" />
           </button>
-          <button
+          {/* <button
             className="refresh-button"
             type="button"
             onClick={() => setPicture(null)}
           >
             <BiRefresh className="refresh-icon" />
-          </button>
+          </button> */}
         </div>
         <div>
           <MessageSection reset={reset} text={text} textValue={textValue} />
